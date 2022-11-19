@@ -1,4 +1,4 @@
-let anchor = document.querySelector('#bottom');
+let anchor = document.querySelector('#anchor');
 let link = document.querySelector('.hero__link');
 link.addEventListener('click',function(e) {
     e.preventDefault();

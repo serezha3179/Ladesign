@@ -297,3 +297,110 @@ nav {
     height: 40px;
 }
 //////////////////////////////////////////////// our-team ///////////////////////////////////////////////////////
+.our-team {
+    padding: 150px 0 10px;
+}
+@media(max-width: 768px) {
+    .our-team {
+        padding: 70px 0 10px;
+    }
+}
+@media(max-width: 575px) {
+    .our-team {
+        position: relative;
+
+    }
+}
+.our-team__title {
+    margin-bottom: 50px;
+}
+@media(max-width: 575px) {
+    .our-team__title {
+        font-size: 30px;
+        line-height: 1.2;
+        letter-spacing: 0.07em;
+        margin-bottom: 23px;
+    }
+}
+.our-team__wrapper {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+@media(max-width: 1200px) {
+    .our-team__wrapper {
+        column-gap: 50px;
+    }
+}
+@media(max-width: 992px) {
+    .our-team__wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        row-gap: 50px;
+    }
+}
+@media(max-width: 575px) {
+    .our-team__wrapper {
+        margin-bottom: 210px;
+    }
+}
+.our-team__items:nth-child(2) {
+    height: 528px;
+}
+@media(max-width: 575px) {
+    .our-team__items:nth-child(2) {
+        position: absolute;
+        bottom: 13px;
+        left: 0;
+        width: 100%;
+        height: 228px;
+    }
+}
+    .our-team__items:nth-child(2) img {
+        width: auto;
+        height: 100%;
+    }
+@media(max-width: 992px) {
+    .our-team__items:nth-child(2) img {
+        width: 100%;
+    }
+}
+.our-team__item {
+    padding: 27px 32px 27px 0px;
+    border-bottom: 1px solid #D5D5D5;;
+}
+.our-team__item:first-child {
+    padding: 10px 0 50px;
+}
+.our-team__item-title {
+    position: relative;
+}
+@media(max-width: 575px) {
+    .our-team__item-title {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+.our-team__item-title::after {
+    content: url('../img/our-team/arrow.svg');
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -33px;
+    transition: 0.2s linear;
+}
+.our-team__item.active .our-team__item-title::after {
+    transform: rotate(-90deg);
+    top: -3px;
+    right: -37px;
+}
+.our-team__item-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
+.our-team__item.active .our-team__item-text {
+    margin-top: 15px;
+}
+////////////////////////////////////////////// portfolio ////////////////////////////////////////////////////
