@@ -7,30 +7,58 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #777777;
-
-    height: 5000px;
 }
 .container {
     max-width: 1294px;
     margin: 0 auto;
     padding: 0 47px;
 }
-@media(max-width: 480px) {
+@media(max-width: 575px) {
     .container {
         padding: 0 15px;
     }
+}
+.title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 1.3px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+.subtitle {
+    font-family: 'Roboto Condensed',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+    letter-spacing: 2px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 /////////////////////////////////////////////////// header ///////////////////////////////////////////////////
 .header {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     padding: 30px 0px;
-    background: transparent;
-    background: rgba(0, 0, 0, 0.6);
     border-bottom: 0.5px solid #878787;
+    background: transparent;
+    transition: 0.5s linear;
+}
+@media(max-width: 575px) {
+    .header {
+        padding: 19px 0px;
+    }
+}
+.header.active {
+    background: white;
+    
 }
 .header__row {
     display: grid;
@@ -38,18 +66,33 @@ body {
     justify-items: center;
     align-items: center;
 }
-@media(max-width: 768px) {
+@media(max-width: 992px) {
     .header__row {
         grid-template-columns: 50px 1fr 50px;
     }
+}
+.header__logo {
+    display: block;
+    width: 45px;
+    height: 45px;
 }
 .header__logo-image {
     width: 45px;
     height: 45px;
     fill: white;
-    // fill: #393246
+    transition: 0.5s linear;
+}    
+.header.active .header__logo-image {
+    fill: #393246;
+    
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
+    .header__logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 575px) {
     .header__logo-image {
         width: 30px;
         height: 30px;
@@ -58,7 +101,12 @@ body {
 nav {
     margin-right: -165px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    nav {
+        margin-right: -47px;
+    }
+}
+@media (max-width: 992px) {
     nav {
         display: none;
     }
@@ -77,9 +125,30 @@ nav {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.5s linear;
+}
+.header.active .nav__item-link {
+    color: #777777;
+    
 }
 .header__contacts {
     justify-self: flex-end;
+}
+@media (max-width: 992px) {
+    .header__contacts {
+        margin-right: 80px;
+    }
+}
+@media (max-width: 575px) {
+    .header__contacts {
+        margin-right: 29px;
+    }
+}
+@media (max-width: 380px) {
+    .header__contacts {
+       margin: 0 auto;
+       margin-right: 10px
+    }
 }
 .header__contacts-item {
     display: flex;
@@ -94,22 +163,16 @@ nav {
     letter-spacing: 1.3px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: .5s linear;
 }
-@media (max-width: 480px) {
+.header.active .header__contacts-item {
+    color: #777777;
+    
+}
+@media (max-width: 575px) {
     .header__contacts-item {
         font-size: 16px;
         line-height: 1.18;
-    }
-}
-@media (max-width: 768px) {
-    .header__contacts {
-        justify-self: flex-end;
-        margin-right: 80px;
-    }
-}
-@media (max-width: 480px) {
-    .header__contacts {
-        margin-right: 29px;
     }
 }
 .header-phone {
@@ -117,8 +180,12 @@ nav {
     height: 21px;
     fill: none;
     stroke: white;
-    // stroke: #393246;
     margin-right: 10px;
+    transition: 0.5s linear;
+}
+.header.active .header-phone {
+    stroke: #393246;
+    
 }
 .header__burger {
     position: relative;
@@ -127,7 +194,7 @@ nav {
     width: 40px;
     height: 21px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .header__burger {
         display: flex;
     }
@@ -137,6 +204,11 @@ nav {
     width: 100%;
     height: 3px;
     background: white;
+    transition: .5s linear;
+}
+.header.active .header__burger-item,.header.active .header__burger-item::before,.header.active .header__burger-item::after {
+    background: #393246;
+    
 }
 .header__burger-item::before,.header__burger-item::after {
     position: absolute;
@@ -150,3 +222,78 @@ nav {
     bottom: 0px;
 }
 //////////////////////////////////////////////////// hero /////////////////////////////////////////////
+.hero {
+    padding: 270px 0px 10px;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
+                            url('../img/hero/hero_bg.png')no-repeat 0% 0% / cover;
+    
+}
+@media(max-width: 575px) {
+    .hero {
+        padding: 165px 0px 10px;
+    }
+}
+.hero__title {
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 140px;
+    line-height: 1.171;
+    letter-spacing: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+@media(max-width: 992px) {
+    .hero__title {
+        font-size: 100px;
+    }
+}
+@media(max-width: 575px) {
+    .hero__title {
+        font-size: 60px;
+    }
+}
+.hero__subtitle {
+    position: relative;
+    max-width: 632px;
+    text-align: center;
+    margin: 0 auto 162px;
+}
+@media(max-width: 1024px) {
+    .hero__subtitle {
+        margin: 0 auto 90px;
+    }
+}
+@media(max-width: 992px) {
+    .hero__subtitle {
+        font-size: 18px;
+    }
+}
+@media(max-width: 575px) {
+    .hero__subtitle {
+        font-size: 16px;
+        margin: 0 auto 162px;
+    }
+}
+.hero__link-wrapper {
+    margin: 0 auto 63px;
+    text-align: center;
+}
+.hero__link {
+    display: inline-block;
+    padding: 10px;
+}
+@media(max-width: 575px) {
+    .hero__link-wrapper {
+        display: none;
+    }
+}
+.arrow_bottom {
+    fill: white;
+    width: 10px;
+    height: 40px;
+}
+//////////////////////////////////////////////// our-team ///////////////////////////////////////////////////////
