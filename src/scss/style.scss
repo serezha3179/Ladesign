@@ -505,39 +505,55 @@ nav {
     background: black;
     z-index: 2;
 }
+.portfolio__items-wrapper {
+    display: none;
+}
+.portfolio__items-wrapper.active {
+    display: block;
+}
 .portfolio__items-inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.tab-1 .portfolio__items-inner {
     grid-template-areas: 
     "a b c d"
     "a e g g"
     "f f g g"
     "h j k k";
-    gap: 30px;
-    margin-bottom: 40px;
 }
-
-
-
-.portfolio__items-inner {
-    display: grid;
-    // display: none;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+.tab-2 .portfolio__items-inner {
     grid-template-areas: 
-    "a b c d"
-    "a e g g"
+    "a e c d"
+    "a b k k"
     "f f g g"
-    "h j k k"
+    "h j g g"
     ;
-    gap: 30px;
-    margin-bottom: 30px;
 }
-.portfolio__items-inner:nth-of-type(2) {
+.tab-3 .portfolio__items-inner {
+    grid-template-areas: 
+    "f f c d"
+    "h e k k"
+    "g g a b "
+    "g g a j "
+    ;
+}
+.tab-4 .portfolio__items-inner {
+    grid-template-areas: 
+    "g g c a"
+    "g g j a"
+    "d b f f"
+    "k k h e"
+    ;
+     
+}
+.portfolio__items-wrapper.active .portfolio__items-inner:nth-of-type(2) {
     display: none;
 }
-.portfolio__items-inner:nth-of-type(2).active {
+.portfolio__items-wrapper.active .portfolio__items-inner:nth-of-type(2).active {
     display: grid;
     // display: none;
     grid-template-columns: repeat(4, 1fr);
