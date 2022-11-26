@@ -603,9 +603,6 @@ nav {
         gap: 10px;
     }
 }
-.portfolio__items-inner.active {
-    // display: none;
-}
 .portfolio__items-inner img {
     width: 100%;
     height: 100%;
@@ -656,19 +653,26 @@ nav {
     color: #393246;
     cursor: pointer;
  }
- .portfolio__title_bottom {
+
+ ////////////////////////////////////////
+ .link-form {
     position: relative;
     max-width: 595px;
-    margin: 0 auto 130px;
     border-bottom: 1px solid #D5D5D5;
     padding-bottom: 12px;
+    margin: 0 auto;
     cursor: pointer;
+
  }
- .portfolio__title_bottom::after {
+ .link-form::after {
     content: url('../img/portfolio/arrow_top.svg');
     position: absolute;
     top: -12px;
     right: -17px;
     width: 16px;
     height: 16px;
+ }
+ ////////////////////////////////////////////////////
+ .portfolio__link-form {
+    margin: 0 auto 130px;
  }
