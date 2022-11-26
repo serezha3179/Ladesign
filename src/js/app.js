@@ -1,7 +1,9 @@
 import * as flsFunctions from './modules/functions.js';
 import './header.js';
 import './hero.js';
-import './our-team.js'
+import './our-team.js';
+import './portfolio-tabs.js';
+import './portfolio-button.js';
 
 flsFunctions.testWebP(function (support) {
     
