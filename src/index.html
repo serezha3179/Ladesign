@@ -47,6 +47,24 @@
           <path d="M3.64645 40.3536C3.84171 40.5488 4.15829 40.5488 4.35356 40.3536L7.53554 37.1716C7.7308 36.9763 7.7308 36.6597 7.53554 36.4645C7.34027 36.2692 7.02369 36.2692 6.82843 36.4645L4 39.2929L1.17157 36.4645C0.976312 36.2692 0.65973 36.2692 0.464468 36.4645C0.269206 36.6597 0.269206 36.9763 0.464468 37.1716L3.64645 40.3536ZM3.5 2.18557e-08L3.5 40L4.5 40L4.5 -2.18557e-08L3.5 2.18557e-08Z"/>
         </g>
       </symbol>
+      <symbol id="input_svg" viewBox="0 0 16 16">
+          <g>
+            <path d="M15.5 0.5L0.5 15.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 0.5H15.5V13" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+      </symbol>
+      <symbol id="arrow_top" viewBox="0 0 16 16">
+        <g>
+          <path d="M15.5 0.5L0.5 15.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 0.5H15.5V13" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </symbol>
+      <symbol id="icon-thanks" viewBox="0 0 60 60">
+        <g>
+          <path d="M27.5002 58C12.3377 58 0 45.6628 0 30.5002C0 15.3377 12.3377 3 27.5002 3C32.7728 3 37.9025 4.50238 42.335 7.34739C43.2052 7.9077 43.4602 9.06767 42.8999 9.94017C42.3378 10.8127 41.1801 11.0649 40.3076 10.5051C36.4825 8.04732 32.0527 6.75001 27.5002 6.75001C14.4049 6.75001 3.75001 17.4049 3.75001 30.5002C3.75001 43.5951 14.4049 54.25 27.5002 54.25C40.5951 54.25 51.25 43.5951 51.25 30.5002C51.25 29.7174 51.2124 28.9425 51.1401 28.1803C51.0403 27.1476 51.7952 26.2325 52.8252 26.1327C53.8602 26.0375 54.7725 26.7878 54.8727 27.8177C54.9574 28.7003 55 29.5952 55 30.5002C55 45.6628 42.6628 58 27.5002 58Z"/>
+          <path d="M26.9694 40C26.4953 40 26.0207 39.8188 25.6602 39.4546L14.5428 28.2943C13.8191 27.5673 13.8191 26.3893 14.5428 25.6628C15.2666 24.9362 16.4401 24.9362 17.1639 25.6628L26.9721 35.5088L52.8357 9.54494C53.5599 8.81835 54.7334 8.81835 55.4572 9.54494C56.1809 10.2715 56.1809 11.4495 55.4572 12.1761L28.2812 39.4569C27.918 39.8188 27.4439 40 26.9694 40Z"/>
+        </g>
+      </symbol>
     </svg>
     @@include('html/header.html')
     <section class="hero">
@@ -356,11 +374,54 @@
         </div> 
       </div>
           <div class="portfolio__button">показать еще работы</div>
-          <div class="portfolio__link-form link-form title">оставить заявку на проект</div>
+          <div class="portfolio__link-form link-form">
+            <h2 class="portfolio__link-title title">оставить заявку на проект</h2>
+          <svg class="arrow_top"><use xlink:href='#arrow_top'></use></svg>
+        </div>
         </div>
     </section>
   </div>
-  
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__close"><img src="@img/popup/close.png" alt="cross"></div>
+         <h2 class="popup__title title">ОСТАВЬТЕ СВОИ КОНТАКТЫ. МЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ</h2>
+         <form action="index.html" class="form">
+          <div class="input__wrapper">
+          <input type="text" class="input" placeholder="Ваше имя">
+          <input type="text" class="input" placeholder="Ваш телефон">
+          </div>
+          <div class="submit__wrapper">
+            <div class="submit__wrapper-items">
+             <input id="submit" type="submit" class="submit">
+             <svg class="input_svg">
+              <use xlink:href="#input_svg"></use>
+             </svg>
+            </div>
+          <div class="form__text">Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
+        </div>
+         </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup-thanks">
+    <div class="popup-thanks__body">
+      <div class="popup-thanks__content">
+        <div class="popup-thanks__close"><img src="@img/popup/close.png" alt="cross" class="popup-thanks__image"></div>
+        <svg class="icon-thanks">
+          <use xlink:href="#icon-thanks"></use>
+        </svg>
+        <h2 class="popup-thanks__title title">Ваша Заявка успешно отправлена</h2>
+        <div class="popup-thanks__text">Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</div>
+        <div class="popup-thanks__social-wrapper">
+          <a href="https://www.houzz.ru/" class="popup-thanks__social-link">houzz</a>
+          <a href="https://www.facebook.com/" class="popup-thanks__social-link">facebook</a>
+          <a href="https://vk.com/" class="popup-thanks__social-link">vkontakte</a>
+          <a href="https://www.instagram.com/" class="popup-thanks__social-link">instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@ import './header.js';
 import './hero.js';
 import './our-team.js';
 import './portfolio.js';
+import './popup.js';
 
 
 
