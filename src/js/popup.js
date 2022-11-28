@@ -35,7 +35,7 @@ let popupThanksWindow = function() {
    let paddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + "px";
    let popupThanksBody = document.querySelector('.popup-thanks__body');
    let body = document.querySelector('body');
-   console.log(submit);
+   // console.log(submit);
    submit.addEventListener('click', (e) => {
        e.preventDefault();
        popupThanks.classList.add('open');

@@ -3,7 +3,7 @@
   @@include('html/head.html',{"title":"Main"})
   <body>
     <div class="wrapper">
-    <svg display="none">
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
       <symbol id="header-logo" viewBox="0 0 45 45">
         <g>
           <path d="M0 0H4.58052V40.299H18.0529V44.8658H0V0Z"/>
@@ -72,15 +72,15 @@
         <h1 class="hero__title title">Ladesign</h1>
         <h2 class="hero__subtitle subtitle">Дизайн-проекты жилых и коммерческих помещений. Малая архитектура</h2>
         <div class="hero__link-wrapper">
-        <a href="/" class="hero__link">
+        <div class="hero__link">
           <svg class="arrow_bottom">
             <use xlink:href="#arrow_bottom"></use>
           </svg>
-        </a>
+        </div>
       </div>
       </div>
     </section>
-    <section class="our-team" id="anchor">
+    <section class="our-team">
       <div class="container">
          <h2 class="our-team__title title">Наша команда дает уверенность</h2>
          <div class="our-team__wrapper">

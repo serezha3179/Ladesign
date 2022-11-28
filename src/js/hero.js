@@ -1,6 +1,13 @@
-let anchor = document.querySelector('#anchor');
+
+let headerHeight = document.querySelector('.header').clientHeight;
 let link = document.querySelector('.hero__link');
+let heroHeight = document.querySelector('.hero').clientHeight;
 link.addEventListener('click',function(e) {
     e.preventDefault();
-    anchor.scrollIntoView({block: "start", behavior: "smooth"});
+    window.scrollTo({
+        top: heroHeight - headerHeight,
+        behavior: 'smooth'
+    })
+
+      
 })

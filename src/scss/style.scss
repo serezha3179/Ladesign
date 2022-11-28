@@ -285,6 +285,7 @@ nav {
 .hero__link {
     display: inline-block;
     padding: 10px;
+    cursor: pointer;
 }
 @media(max-width: 575px) {
     .hero__link-wrapper {
@@ -939,6 +940,7 @@ nav {
     position: absolute;
     top: -26px;
     right: 0px;
+    cursor: pointer;
 }
 .icon-thanks {
     width: 60px;
