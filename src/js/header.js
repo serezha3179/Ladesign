@@ -3,18 +3,18 @@ let header = document.querySelector('.header')
 let body = document.querySelector('body');
 let headerBurger = document.querySelector('.header__burger');
 window.addEventListener('scroll', function() {
-    if (this.scrollY > 10) {
+  if(header.classList.contains('js-header-main')) {
+    if (this.scrollY > 0) {
         this.document.querySelector('.header').classList.add('scroll');
     }
     else {
         this.document.querySelector('.header').classList.remove('scroll')
         // body.style.paddingTop = "";
     }
+  }
   });
-  if(window.pageYOffset > 10) {
-
+  if(window.scrollY > 0) {
     header.classList.add('scroll');
-    
   }
 headerBurger.addEventListener('click',() => {
   headerBurger.classList.toggle('active');
