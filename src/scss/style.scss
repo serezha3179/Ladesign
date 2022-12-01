@@ -946,68 +946,7 @@ body.lock {
         margin: 0 auto 71px;
      }
  }
- /////////////////////////////////////////// popup ////////////////////////////////////////////////
- .popup {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    opacity: 0;
-    visibility: hidden;
- }
- .popup.open {
-    opacity: 1;
-    visibility: visible;
- }
- .popup__body {
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10px;
- }
-.popup__content {
-    position: relative;
-    max-width: 800px;
-    padding: 50px;
-    background: #fff;
-}
-@media(max-width: 768px) {
-    .popup__content {
-        max-width: 600px;
-    }
-}
-.popup__close{
-    position: absolute;
-    top: -28px;
-    right: 0px;
-    cursor: pointer;
-}
-.popup__title {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #3D3D3D;
-    margin-bottom: 20px;
-}
-@media(max-width: 667px) {
-    .popup__title {
-        font-size: 20px;
-    }
-    .popup__content {
-        padding: 30px;
-    }
-}
-@media(max-width: 480px) {
-    .popup__content {
-        padding: 15px;
-    }
-}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -1112,6 +1051,104 @@ body.lock {
 .form__text span {
     text-decoration: underline;
 }
+///////////////////////////////////////// footer ///////////////////////////////////////
+.footer {
+    padding: 95px 0px;
+    background: #F7F7F7;
+}
+.footer__wrapper {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    justify-items: center;
+    gap: 30px;
+}
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__item-link {
+    display: block;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    cursor: pointer;
+}
+.footer__item-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.15;
+    text-align: center;
+    color: #878787;
+}
+ /////////////////////////////////////////// popup ////////////////////////////////////////////////
+ .popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+ }
+ .popup.open {
+    opacity: 1;
+    visibility: visible;
+ }
+ .popup__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+ }
+.popup__content {
+    position: relative;
+    max-width: 800px;
+    padding: 50px;
+    background: #fff;
+}
+@media(max-width: 768px) {
+    .popup__content {
+        max-width: 600px;
+    }
+}
+.popup__close{
+    position: absolute;
+    top: -28px;
+    right: 0px;
+    cursor: pointer;
+}
+.popup__title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+}
+@media(max-width: 667px) {
+    .popup__title {
+        font-size: 20px;
+    }
+    .popup__content {
+        padding: 30px;
+    }
+}
+@media(max-width: 480px) {
+    .popup__content {
+        padding: 15px;
+    }
+}
 //////////////////////////////////////// popup-thanks //////////////////////////////////
 .popup-thanks {
     position: fixed;
@@ -1205,8 +1242,49 @@ body.lock {
         display: none;
     }
 }
+
 //////////////////////////////////////////////// prices /////////////////////////////////////////////////
-.aaa {
-    width: 100%;
-    height: 2000px;
+.prices {
+    padding: 205px 0 10px;
+}
+.prices__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.prices__items {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    margin-bottom: 150px;
+}
+.prices__item_left .prices__item-title {
+    max-width: 380px;
+}
+.prices__item-items {
+    border-bottom: 1px solid #D5D5D5;
+    margin-bottom: 25px;
+}
+.prices__item-items:last-child {
+    margin-bottom: 0px;
+}
+.prices__item-title {
+    margin-bottom: 12px;
+}
+.prices__item-text {
+    margin-bottom: 25px;
+}
+/////////////////////////////////////////////////// project-cost ////////////////////////////////////////
+.project-cost {
+    padding: 10px 0 10px;
+}
+.project-cost__title {
+    max-width: 400px;
+    margin: 0 auto 58px;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3D3D3D;
 }
