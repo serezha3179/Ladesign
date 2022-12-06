@@ -1,3 +1,4 @@
+if(document.querySelector('.portfolio')) {
 let tab = function() {
     let tabNav = document.querySelectorAll('.portfolio__tab'),
         tabContent = document.querySelectorAll('.portfolio__items-wrapper'),
@@ -43,3 +44,4 @@ let tab = function() {
     }
     
     button();
+  }

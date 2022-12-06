@@ -4,7 +4,7 @@ import './hero.js';
 import './our-team.js';
 import './portfolio.js';
 import './popup.js';
-
+import './project-cost.js';
 
 
 flsFunctions.testWebP(function (support) {
