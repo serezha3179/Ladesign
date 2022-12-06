@@ -29,11 +29,11 @@ let tab = function() {
   tab();
 
   /////////////////////////////////////////////////////////////////////////////////////////////////
-
-  let button = function () {
-    let button = document.querySelector('.portfolio__button');
+  if(document.querySelector('.portfolio')) {
+  let click = function() {
+    let button = document.querySelector('.portfolio__button');console.log
     let elem = document.querySelectorAll('.portfolio__items-inner:nth-of-type(2)');
-    button.addEventListener('click',(e) => {
+    button.addEventListener('click',() => {
        elem.forEach(item => {
         if(item.matches('.portfolio__items-inner:nth-of-type(2)')) {
         item.classList.toggle('active')
@@ -41,5 +41,5 @@ let tab = function() {
       })
     })
     }
-    
-    button();
+    click();
+  }
