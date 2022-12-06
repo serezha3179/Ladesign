@@ -162,6 +162,7 @@ if (document.querySelector(".project-cost")) {
         submenu.style.marginBottom = "auto";
         submenu.style.paddinTop = "";
         target.innerHTML = "cвернуть";
+        target.innerHTML = "cвернуть";
       }
     });
   });
