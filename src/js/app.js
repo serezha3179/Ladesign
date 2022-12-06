@@ -5,7 +5,10 @@ import './our-team.js';
 import './portfolio.js';
 import './popup.js';
 import './project-cost.js';
+<<<<<<< HEAD
 
+=======
+>>>>>>> project-cost
 
 
 flsFunctions.testWebP(function (support) {

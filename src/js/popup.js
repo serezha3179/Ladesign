@@ -1,4 +1,5 @@
-if(document.querySelector('.popup') && document.querySelector('.popup-thanks')) {
+
+if(document.querySelector('.popup') || document.querySelector('.popup-thanks')) {
 let popupWindow = function() {
   let popupLink = document.querySelector('.link-form');
   let popup = document.querySelector('.popup');
