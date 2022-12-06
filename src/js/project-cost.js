@@ -87,9 +87,7 @@ let mediaQuery = window.matchMedia('(max-width: 992px)');
 
 if (document.querySelector(".project-cost")) {
   let buttonMain = document.querySelector(".project-cost__item-button_main");
-  let buttonBottom = document.querySelectorAll(
-    ".project-cost__item-button_bottom"
-  );
+  let buttonBottom = document.querySelectorAll(".project-cost__item-button_bottom");
   let itemsText = document.querySelectorAll(".project-cost__item-text");
   let itemText = document.querySelector(".project-cost__item-text");
   let itemWrapper = document.querySelector(".project-cost__wrapper");
@@ -165,4 +163,5 @@ if (document.querySelector(".project-cost")) {
       }
     });
   });
+  console.log('aaaaa')
 }
