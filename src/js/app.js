@@ -5,6 +5,7 @@ import './our-team.js';
 import './portfolio.js';
 import './popup.js';
 import './project-cost.js';
+import './button-top.js';
 
 
 flsFunctions.testWebP(function (support) {

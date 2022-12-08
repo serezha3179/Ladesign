@@ -28,11 +28,11 @@ let tab = function() {
   };
   
   tab();
-
+}
   /////////////////////////////////////////////////////////////////////////////////////////////////
   if(document.querySelector('.portfolio')) {
   let click = function() {
-    let button = document.querySelector('.portfolio__button');console.log
+    let button = document.querySelector('.portfolio__button');
     let elem = document.querySelectorAll('.portfolio__items-inner:nth-of-type(2)');
     button.addEventListener('click',() => {
        elem.forEach(item => {
@@ -42,10 +42,5 @@ let tab = function() {
       })
     })
     }
-<<<<<<< HEAD
     click();
-=======
-    
-    button();
->>>>>>> project-cost
   }
