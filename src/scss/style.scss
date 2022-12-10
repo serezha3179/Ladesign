@@ -1620,3 +1620,121 @@ body.lock {
         margin: 0 auto 71px;
      }
  }
+/////////////////////////////////////////////////// contacts ///////////////////////////////////////////////////
+.contacts {
+    padding: 205px 0 10px;
+}
+@media(max-width: 768px) {
+    .contacts {
+        padding: 175px 0 10px;
+    }
+}
+@media(max-width: 575px) {
+    .contacts {
+        padding: 120px 0 10px;
+    }
+}
+.contacts__title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+}
+@media(max-width: 768px) {
+    .contacts__title {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.25;
+    }
+}
+.contacts__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.contacts__items:nth-child(2) {
+    justify-self: center;
+}
+.contacts__items-title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contacts__items-text {
+    max-width: 499px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.contacts-form__label {
+    position: relative;
+    border-bottom: 1px solid #393246;
+}
+.contacts-form__label span {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    // font-family: 'Roboto';
+    // font-style: normal;
+    // font-weight: 300;
+    // font-size: 16px;
+    // line-height: 1.5;
+}
+.contacts-form__label:nth-child(4) span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777777;
+    top: -7px;
+    left: 30px;
+    display: inline-block;
+}
+.contacts-form__label:nth-child(4) {
+    border-bottom: none;
+}
+.contacts-form__input:focus ~ span,
+.contacts-form__label.active span {
+    top: -20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.15;
+    color: #ADADAD;
+}
+.contacts-form__input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ADADAD;
+    width: 100%;
+    outline: none;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #393246;
+    padding-bottom: 5px;
+}
+.contacts-form__input[type="file"] {
+    opacity: 0;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.download {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}

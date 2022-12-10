@@ -5,9 +5,12 @@ import './our-team.js';
 import './portfolio.js';
 import './popup.js';
 import './project-cost.js';
-import './button-top.js';
-import './slider.js';
+import './button-top.js'; 
+import './jquery-3.6.1.min.js'
 import './slick/slick.min.js';
+import './slider.js';
+import './contacts-form.js';
+
 
 
 flsFunctions.testWebP(function (support) {

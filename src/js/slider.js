@@ -1,4 +1,4 @@
-
+if(document.querySelector('.completed-projects__slider')) {
 $(document).ready(function(){
     $('.completed-projects__slider').slick({
         arrows: true,
@@ -45,3 +45,4 @@ $(document).ready(function(){
               }]
     });
   });
+}

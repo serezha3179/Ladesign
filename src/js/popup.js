@@ -8,11 +8,13 @@ let popupWindow = function() {
   let popupBody = document.querySelector('.popup__body')
   let paddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + "px";
   // let modalBody = document.querySelector('.popup__body')
+  if(popupLink) {
   popupLink.addEventListener('click',() => {
     popup.classList.add('open');
     body.style.overflow = 'hidden';
     body.style.paddingRight = paddingValue
   });
+}
   close.addEventListener('click',() => {
     popup.classList.remove('open');
     body.style.overflow = '';
