@@ -1,0 +1,102 @@
+.completed-projects__slider-wrapper {
+    position: relative;
+}
+.completed-projects__slider {
+    // display: flex;
+    position: relative;
+    padding-left: 6px;
+    margin-bottom: 50px;
+}
+@media(max-width: 1024px) {
+    .completed-projects__slider {
+        padding-left: 11px;
+    }
+}
+@media(max-width: 768px) {
+    .completed-projects__slider {
+        padding-left: 5%;
+    }
+}
+@media(max-width: 721px) {
+    .completed-projects__slider {
+        padding-left: 1%;
+    }
+}
+.slick-list {
+    overflow: hidden;
+    margin: 0 -10px;
+}
+.slick-track {
+    display: flex;
+}
+.completed-projects__arrows-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+}
+@media(max-width: 768px) {
+    .completed-projects__arrows-wrapper {
+        display: none;
+    }
+}
+.completed-projects__arrows-wrapper .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    outline: none;
+}
+.completed-projects__arrows-wrapper .slick-arrow.slick-prev { 
+    left: 3%;
+    background: rgba(255, 255, 255, 0.05) url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfYl8xNzU2XzQ2MSkiPgo8Y2lyY2xlIHI9IjIwIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyMCAyMCkiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPGNpcmNsZSByPSIxOS41IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyMCAyMCkiIHN0cm9rZT0id2hpdGUiLz4KPC9nPgo8cGF0aCBkPSJNMTAuMzE0NCAyMC4zNTM2QzEwLjExOTIgMjAuMTU4MyAxMC4xMTkyIDE5Ljg0MTcgMTAuMzE0NCAxOS42NDY0TDEzLjQ5NjQgMTYuNDY0NUMxMy42OTE3IDE2LjI2OTIgMTQuMDA4MiAxNi4yNjkyIDE0LjIwMzUgMTYuNDY0NUMxNC4zOTg4IDE2LjY1OTcgMTQuMzk4OCAxNi45NzYzIDE0LjIwMzUgMTcuMTcxNkwxMS4zNzUxIDIwTDE0LjIwMzUgMjIuODI4NEMxNC4zOTg4IDIzLjAyMzcgMTQuMzk4OCAyMy4zNDAzIDE0LjIwMzUgMjMuNTM1NUMxNC4wMDgyIDIzLjczMDggMTMuNjkxNyAyMy43MzA4IDEzLjQ5NjQgMjMuNTM1NUwxMC4zMTQ0IDIwLjM1MzZaTTMwLjY2OCAyMC41SDEwLjY2OFYxOS41SDMwLjY2OFYyMC41WiIgZmlsbD0id2hpdGUiLz4KPGRlZnM+CjxmaWx0ZXIgaWQ9ImZpbHRlcjBfYl8xNzU2XzQ2MSIgeD0iLTUiIHk9Ii01IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlR2F1c3NpYW5CbHVyIGluPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHN0ZERldmlhdGlvbj0iMi41Ii8+CjxmZUNvbXBvc2l0ZSBpbjI9IlNvdXJjZUFscGhhIiBvcGVyYXRvcj0iaW4iIHJlc3VsdD0iZWZmZWN0MV9iYWNrZ3JvdW5kQmx1cl8xNzU2XzQ2MSIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfYmFja2dyb3VuZEJsdXJfMTc1Nl80NjEiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjwvZGVmcz4KPC9zdmc+Cg==')no-repeat 50% 50%;
+
+}
+.completed-projects__arrows-wrapper .slick-arrow.slick-next { 
+    //  right: 2.5%;
+    left: 93%;
+     background: rgba(255, 255, 255, 0.05) url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDIxIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yMC42ODU2IDQuMzUzNTVDMjAuODgwOCA0LjE1ODI5IDIwLjg4MDggMy44NDE3MSAyMC42ODU2IDMuNjQ2NDVMMTcuNTAzNiAwLjQ2NDQ2NkMxNy4zMDgzIDAuMjY5MjA0IDE2Ljk5MTggMC4yNjkyMDQgMTYuNzk2NSAwLjQ2NDQ2NkMxNi42MDEyIDAuNjU5NzI4IDE2LjYwMTIgMC45NzYzMTEgMTYuNzk2NSAxLjE3MTU3TDE5LjYyNDkgNEwxNi43OTY1IDYuODI4NDNDMTYuNjAxMiA3LjAyMzY5IDE2LjYwMTIgNy4zNDAyNyAxNi43OTY1IDcuNTM1NTNDMTYuOTkxOCA3LjczMDggMTcuMzA4MyA3LjczMDggMTcuNTAzNiA3LjUzNTUzTDIwLjY4NTYgNC4zNTM1NVpNMC4zMzIwMzEgNC41TDIwLjMzMiA0LjVWMy41TDAuMzMyMDMxIDMuNVY0LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K')no-repeat 50% 50%;
+    }
+.completed-projects__item {
+    // width: calc(25% - 10px);
+    margin: 0 10px;
+    outline: none;
+}
+@media(max-width: 768px) {
+    .completed-projects__item {
+        // max-width: 324px;
+        // width: 100%;
+        // margin: 0 -11px;
+    }
+}
+@media(max-width: 575px) {
+    .completed-projects__item-img {
+        margin: 0 auto;
+    }
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.slick-dots li {
+    display: inline-block;
+    // margin: 0 10px;
+    height: 3px;
+    width: 50px;
+    background: #D5D5D5;
+}
+.slick-dots li.slick-active {
+    background: black;
+}
+.slick-dots li button {
+    font-size: 0;
+    // height: 0;
+    // background: white;
+    border: none;
+}

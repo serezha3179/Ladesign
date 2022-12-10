@@ -120,9 +120,74 @@
                 <button class="project-cost__item-button project-cost__item-button_main">развернуть</button>
             </div>
         </section>
+        <section class="completed-projects">
+            <div class="container">
+                <h2 class="completed-projects__title title">РЕАЛИЗОВАНЫЕ ПРОЕКТЫ</h2>
+                <div class="completed-projects__slider-wrapper">
+                <div class="completed-projects__slider">
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image1.jpg" alt="kitchen" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image2.jpg" alt="hall" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image3.jpg" alt="badroom" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image4.jpg" alt="stairs" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image1.jpg" alt="kitchen" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image2.jpg" alt="hall" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image3.jpg" alt="badroom" class="completed-projects__item-img"></div>
+                    <div class="completed-projects__item"><img src="@img/completed-projects/image4.jpg" alt="stairs" class="completed-projects__item-img"></div>
+                </div>
+                <div class="completed-projects__arrows-wrapper"></div>
+            </div>
+                <div class="completed-projects__link-form link-form">
+                    <h2 class="completed-projects__link-title link-form__title title">оставить заявку на проект</h2>
+                  <svg class="arrow_top"><use xlink:href='@img/sprite.svg#arrow_top'></use></svg>
+                </div>
+            </div>
+        </section>
+        @@include('html/footer.html')
     </div>
+    <div class="popup" id="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <div class="popup__close"><img src="@img/popup/close.png" alt="cross"></div>
+             <h2 class="popup__title title">ОСТАВЬТЕ СВОИ КОНТАКТЫ. МЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ</h2>
+             <form action="index.html" class="form">
+              <div class="input__wrapper">
+              <input type="text" class="input" placeholder="Ваше имя">
+              <input type="text" class="input" placeholder="Ваш телефон">
+              </div>
+              <div class="submit__wrapper">
+                <div class="submit__wrapper-items">
+                 <input id="submit" type="submit" class="submit">
+                 <svg class="input_svg">
+                  <use xlink:href="#input_svg"></use>
+                 </svg>
+                </div>
+              <div class="form__text">Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
+            </div>
+             </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup-thanks">
+        <div class="popup-thanks__body">
+          <div class="popup-thanks__content">
+            <div class="popup-thanks__close"><img src="@img/popup/close.png" alt="cross" class="popup-thanks__image"></div>
+            <svg class="icon-thanks">
+              <use xlink:href="@img/sprite.svg#icon-thanks"></use>
+            </svg>
+            <h2 class="popup-thanks__title title">Ваша Заявка успешно отправлена</h2>
+            <div class="popup-thanks__text">Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</div>
+            <div class="popup-thanks__social-wrapper">
+              <a href="https://www.houzz.ru/" class="popup-thanks__social-link">houzz</a>
+              <a href="https://www.facebook.com/" class="popup-thanks__social-link">facebook</a>
+              <a href="https://vk.com/" class="popup-thanks__social-link">vkontakte</a>
+              <a href="https://www.instagram.com/" class="popup-thanks__social-link">instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
     <span class="button-top">
     </span>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

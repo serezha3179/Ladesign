@@ -6,6 +6,8 @@ import './portfolio.js';
 import './popup.js';
 import './project-cost.js';
 import './button-top.js';
+import './slider.js';
+import './slick/slick.min.js';
 
 
 flsFunctions.testWebP(function (support) {
