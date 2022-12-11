@@ -1,6 +1,5 @@
-let inputs = document.querySelectorAll('.contacts-form__input');console.log(inputs)
+let inputs = document.querySelectorAll('.contacts-form__input');
 inputs.forEach(item => {
-    console.log(item)
     if(!item.matches('.contacts-form__input[type="file"]'))
     item.addEventListener('focusout',()=>{
         let inputLength = item.value.length;
