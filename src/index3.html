@@ -27,8 +27,9 @@
                                  <span>Ваш вопрос</span>
                              </label>
                              <label class="contacts-form__label">
-                                 <svg class="download"><use xlink:href="@img/sprite.svg#download"></use></svg><span>Прикрепить файл</span>
-                                <input type="file"  class="contacts-form__input">
+                               <input type="file"  class="contacts-form__input">
+                               <svg class="download"><use xlink:href="@img/sprite.svg#download"></use></svg>
+                               <span>Прикрепить файл</span>
                              </label>
                             <div class="submit__wrapper">
                                 <div class="submit__wrapper-items">
@@ -45,10 +46,35 @@
                         <h2 class="contacts__items-title title">
                             НАШИ КОНТАКТЫ
                         </h2>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-phone">
+                            <use xlink:href="@img/sprite.svg#header-phone"></use>
+                          </svg>
+                          <a href="tel:+79184123443" class="contacts__item-link">+7 918 412-34-43</a>
+                        </div>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-email">
+                            <use xlink:href="@img/sprite.svg#email"></use>
+                          </svg>
+                          <a href="mailto:ladesign@inbox.ru" class="contacts__item-link">ladesign@inbox.ru</a>
+                        </div>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-clock">
+                            <use xlink:href="@img/sprite.svg#clock"></use>
+                            <span class="contacts__item-text">Пн - Сб 9:00 — 18:00</span>
+                          </svg>
+                        </div>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-location">
+                            <use xlink:href="@img/sprite.svg#location"></use>
+                          </svg>
+                          <span>г.Краснодар,<br>ул.Братьев Игнатовых, 1/1</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        @@include('html/footer.html')
     </div>
     <div class="popup" id="popup">
         <div class="popup__body">
