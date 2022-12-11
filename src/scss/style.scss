@@ -1676,6 +1676,65 @@ body.lock {
     margin-bottom: 30px;
 }
 .contacts-form__label {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.contacts-form__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3D3D3D;
+    outline: none;
+}
+.contacts-form__input[type="file"] {
+    opacity: 0;
+}
+.contacts-form__label:nth-child(4) {
+    position: relative;
+}
+.contacts-form__label:nth-child(4) .download,
+.contacts-form__label:nth-child(4) span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+.contacts-form__label:nth-child(4) span {
+    left: 30px;
+}
+.contacts-form__label span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    color: #ADADAD;
+}
+.contacts-form__label.active span,
+input:focus ~ span {
+    top: -60%;
+    font-size: 13px;
+    line-height: 1.15;
+    
+}
+input[type="file"] ~ span {
+    position: static;
+    font-size: inherit
+}
+.download {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*
+.contacts-form__label {
     position: relative;
     border-bottom: 1px solid #393246;
 }
@@ -1737,4 +1796,4 @@ body.lock {
     display: inline-block;
     width: 20px;
     height: 20px;
-}
+}*/
