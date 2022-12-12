@@ -10,6 +10,7 @@ import './jquery-3.6.1.min.js'
 import './slick/slick.min.js';
 import './slider.js';
 import './contacts-form.js';
+import './apartment-design__slider.js';
 
 
 

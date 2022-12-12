@@ -1645,7 +1645,18 @@ input[type="file"] ~ span {
 .work-hero {
     position: relative;
     padding: 353px 0 347px;
-    background: url('../img/work/work_bg.jpg')no-repeat 0% 0% / cover;
+    background: url('../img/work/work_bg.jpg')no-repeat center center / cover;
+}
+@media(max-width: 1024px) {
+    .work-hero {
+        padding: 250px 0px;
+    }
+}
+@media(max-width: 575px) {
+    .work-hero {
+        padding: 205px 0px;
+        background-position: 62% center;
+    }
 }
 .work-hero::after {
     content: '';
@@ -1690,7 +1701,89 @@ input[type="file"] ~ span {
     }
 }
 ////////////////////////////////////////////// apartment-design ///////////////////////////////////////////////////////
-
+.apartment-design {
+    padding: 150px 0px;
+}
+@media(max-width: 768px) {
+    .apartment-design {
+        padding: 70px 0px;
+    }
+}
+.apartment-design__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    max-width: 569px;
+    margin-bottom: 51px;
+}
+@media(max-width: 575px) {
+    .apartment-design__title {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.25;
+    }
+}
+.apartment-design__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 102px;
+    margin-bottom: 100px;
+}
+@media(max-width: 1200px) {
+    .apartment-design__wrapper {
+        gap: 30px;
+    }
+}
+@media(max-width: 992px) {
+    .apartment-design__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 575px) {
+    .apartment-design__wrapper {
+        margin-bottom: 30px;
+    }
+}
+.apartment-design__items p {
+    max-width: 483px;
+}
+@media(max-width: 992px) {
+    .apartment-design__items p {
+        max-width: 100%;
+    }
+}
+.apartment-design__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 483px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #D5D5D5;
+}
+@media(max-width: 992px) {
+    .apartment-design__item {
+        max-width: 100%;
+    }
+}
+.apartment-design__item-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #878787;
+}
+.apartment-design__item-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #393246;
+}
+@import './apartment-design-slider.scss';
 
 @import "slider.scss";
 @import "popup.scss";

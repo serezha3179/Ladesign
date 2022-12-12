@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     @@include('html/head.html',{"title":"Работа"})
 <body>
     <div class="wrapper">
@@ -10,6 +10,50 @@
                 <h2 class="work-hero__subtitle subtile">UNIQUE COLLECTION</h2>
             </div>
         </section>
+        <section class="apartment-design">
+            <div class="container">
+                <div class="apartment-design__title title">Дизайн 1-комнатной квартиры в стиле loft</div>
+                <div class="apartment-design__wrapper">
+                    <div class="apartment-design__items">
+                        <div class="apartment-design__item">
+                            <h3 class="apartment-design__item-title title">Для кого</h3>
+                            <div class="apartment-design__item-text">молодой мужчина</div>
+                        </div>
+                        <div class="apartment-design__item">
+                            <h3 class="apartment-design__item-title title">общая площадь</h3>
+                            <div class="apartment-design__item-text">60м2</div>
+                        </div>
+                        <div class="apartment-design__item">
+                            <h3 class="apartment-design__item-title title">место расположения</h3>
+                            <div class="apartment-design__item-text">Краснодар</div>
+                        </div>
+                        <div class="apartment-design__item">
+                            <h3 class="apartment-design__item-title title">срок выполнения</h3>
+                            <div class="apartment-design__item-text">1 месяц</div>
+                        </div>
+                    </div>
+                    <div class="apartment-design__items">
+                        <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт в классическом понимании и с очень интересными деталями.</p>
+                        <p>В интерьере использовано довольно много различных материалов и текстур. Однако благодаря тому, что каждый материал применяется не единожды и находит себе продолжение в других помещениях, квартира смотрится цельным объёмом, где все текстуры дополняют друг друга и сочетаются между собой.</p>
+                     </div>
+                </div>
+                <div class="apartment-design-slider__wrapper">
+                <div class="apartment-design-slider">
+                    <div class="apartment-design-slider__item">
+                        <img src="@img/apartment-design/image.jpg" alt="apartment" class="apartment-design-slider__image">
+                    </div>
+                    <div class="apartment-design-slider__item">
+                        <img src="@img/apartment-design/image.jpg" alt="apartment" class="apartment-design-slider__image">
+                    </div>
+                    <div class="apartment-design-slider__item">
+                        <img src="@img/apartment-design/image.jpg" alt="apartment" class="apartment-design-slider__image">
+                    </div>
+                </div>
+                <div class="apartment-design-slider__arrows-wrapper"></div>
+              </div>
+            </div>
+        </section>
+        
         @@include('html/footer.html')
     </div>
     <div class="popup" id="popup">
@@ -24,7 +68,7 @@
               </div>
               <div class="submit__wrapper">
                 <div class="submit__wrapper-items">
-                 <input id="submit" type="submit" class="submit">
+                 <input id="submit-popup" type="submit" class="submit">
                  <svg class="input_svg">
                   <use xlink:href="@img/sprite.svg#input_svg"></use>
                  </svg>

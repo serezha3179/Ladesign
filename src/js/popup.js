@@ -32,7 +32,7 @@ let popupWindow = function() {
 popupWindow();
 
 let popupThanksWindow = function() {
-   let submit = document.querySelector('#submit');
+   let submitPopup = document.querySelector('#submit-popup');
    let popupThanks = document.querySelector('.popup-thanks');
    let popup = document.querySelector('.popup');
    let close = document.querySelector('.popup-thanks__close');
@@ -40,7 +40,7 @@ let popupThanksWindow = function() {
    let popupThanksBody = document.querySelector('.popup-thanks__body');
    let body = document.querySelector('body');
    // console.log(submit);
-   submit.addEventListener('click', (e) => {
+   submitPopup.addEventListener('click', (e) => {
        e.preventDefault();
        popupThanks.classList.add('open');
       popup.classList.remove('open');
