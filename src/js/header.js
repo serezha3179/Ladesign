@@ -1,7 +1,7 @@
 
-let header = document.querySelector('.header')
-let body = document.querySelector('body');
-let headerBurger = document.querySelector('.header__burger');
+const header = document.querySelector('.header')
+const body = document.querySelector('body');
+const headerBurger = document.querySelector('.header__burger');
 window.addEventListener('scroll', function() {
   if(header.classList.contains('js-header-main')) {
     if (this.scrollY > 0) {
@@ -9,7 +9,6 @@ window.addEventListener('scroll', function() {
     }
     else {
         this.document.querySelector('.header').classList.remove('scroll')
-        // body.style.paddingTop = "";
     }
   }
   });

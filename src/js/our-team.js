@@ -1,5 +1,5 @@
-// let items = document.querySelector('.our-team__items');
-let items = document.querySelectorAll('.our-team__item');
+if(document.querySelector('.our-team')) {
+const items = document.querySelectorAll('.our-team__item');
 items.forEach(item => {
     item.addEventListener('click',()=>{
         if(item.classList.contains('active')!=true) {
@@ -24,4 +24,4 @@ items.forEach(item => {
         }
     })
 })
-       
+}   

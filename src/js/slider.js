@@ -1,14 +1,12 @@
-if(document.querySelector('.completed-projects__slider')) {
+if(document.querySelector('.completed-projects .slider__items')||document.querySelector('.similar-projects .slider__items')) {
 $(document).ready(function(){
-    $('.completed-projects__slider').slick({
+    $('.slider__items').slick({
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
-        // centerMode: true,
-        // centerPadding: '60px',
         dots: true,
-        appendArrows:$('.completed-projects__arrows-wrapper'),
+        appendArrows:$('.slider__arrows-wrapper'),
         responsive: [
             {
               breakpoint: 1025,
@@ -26,9 +24,6 @@ $(document).ready(function(){
                   slidesToScroll: 1,
                   infinite: true,
                   dots: true,
-                //   centerMode: true,
-                //   variableWidth: true,
-                //   centerPadding: '60px',
                 }
               },
               {
@@ -38,9 +33,6 @@ $(document).ready(function(){
                   slidesToScroll: 1,
                   infinite: true,
                   dots: true,
-                //   centerMode: true,
-                //   variableWidth: true,
-                //   centerPadding: '60px',
                 }
               }]
     });

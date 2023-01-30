@@ -1,13 +1,18 @@
-let body = document.querySelector('body');
-let buttonTop = document.querySelector('.button-top');
+const body = document.querySelector('body');
+const buttonTop = document.querySelector('.button-top');
+
 if(body) {
     window.addEventListener('scroll', ()=> {
-        if(scrollY > 0) {
+    const scrollY = window.scrollY || document.documentElement.scrollTop; 
+        if(scrollY > 600) {
     buttonTop.classList.add('scroll')
    } else {
     buttonTop.classList.remove('scroll')
    }
     })
+    if(window.scrollY > 600) {
+        buttonTop.classList.add('scroll')
+    }
    buttonTop.addEventListener('click', ()=> {
     body.scrollIntoView({block: "start", behavior: "smooth"})
    })

@@ -15,15 +15,15 @@
                         <div class="contacts__items-text">Мы всегда рады ответить на интересующие  вас вопросы. Заполните форму и наш специалист свяжется с вами.</div>
                         <form action="index3.html" class="contacts-form">
                             <label class="contacts-form__label">
-                               <input type="text"  class="contacts-form__input">
+                               <input type="text"  class="contacts-form__input required">
                                <span>Имя</span>
                             </label>
                             <label class="contacts-form__label">
-                                <input type="email"  class="contacts-form__input">
+                                <input type="text"  class="contacts-form__input required email">
                                 <span>Ваша эл.почта</span>
                              </label>
                              <label class="contacts-form__label">
-                                 <input type="text"  class="contacts-form__input">
+                                 <input type="text"  class="contacts-form__input required">
                                  <span>Ваш вопрос</span>
                              </label>
                              <label class="contacts-form__label">
@@ -31,6 +31,7 @@
                                <svg class="download"><use xlink:href="@img/sprite.svg#download"></use></svg>
                                <span>Прикрепить файл</span>
                              </label>
+                             <div class="input-file-list"></div>  
                             <div class="submit__wrapper">
                                 <div class="submit__wrapper-items">
                                  <input id="submit" type="submit" class="submit">
