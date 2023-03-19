@@ -16,7 +16,10 @@ let popupWindow = function() {
      body.style.paddingRight = '';
      let inputs = document.querySelectorAll('input');
      inputs.forEach(item => {
-      item.value = '';
+      if(!item.classList.contains('submit')) {
+        item.value = '';
+      }
+      
      })
      popup.removeEventListener('click', closePopup);
   }
@@ -55,7 +58,7 @@ let popupThanksWindow = function() {
        e.preventDefault();
        popupThanks.classList.add('open');
        inputs.forEach(item => {
-         if(!item.matches('[type="submit"]')) {
+         if(!item.classList.contains('submit')) {
          item.value = "";
            }
        })

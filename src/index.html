@@ -75,7 +75,8 @@
     @@include('html/portfolio.html',{"main":"main"})
     @@include('html/footer.html')
   </div>
-  <div class="popup" id="popup">
+  @@include('html/popup.html')
+  <!-- <div class="popup" id="popup">
     <div class="popup__body">
       <div class="popup__content">
         <div class="popup__close"><img src="@img/popup/close.png" alt="cross"></div>
@@ -89,7 +90,7 @@
             <div class="submit__wrapper-items">
              <input id="submit-popup" type="submit" class="submit">
              <svg class="input_svg">
-              <use xlink:href="#input_svg"></use>
+              <use xlink:href="@img/sprite.svg#input_svg"></use>
              </svg>
             </div>
           <div class="form__text">Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
@@ -115,7 +116,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <span class="button-top">
   </span>
     <script src="js/app.min.js"></script>
