@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Main</title>
+</head>
+  <body>
+    <div class="wrapper">
+    <header class="header js-header-main" id="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="/" class="header__logo">
+                <svg class="header__logo-image">
+                    <use xlink:href="img/sprite.svg#header-logo"></use>
+                </svg>
+            </a>
+            <nav class="nav">
+               <ul class="nav__row">
+                <li class="nav__item"><a href="index1.html" class="nav__item-link">Портфолио</a></li>
+                <li class="nav__item"><a href="index2.html" class="nav__item-link">Услуги и цены</a></li>
+                <li class="nav__item"><a href="index3.html" class="nav__item-link">Контакты</a></li>
+               </ul>
+            </nav>
+            <div class="header__contacts">
+                <a href="tel:+79184123443" class="header__contacts-item">
+                    <svg class="header-phone">
+                        <use xlink:href="img/sprite.svg#header-phone"></use>
+                    </svg>
+                    +7 918 412-34-43</a>
+            </div>
+            <div class="header__burger">
+                <span class="header__burger-item"></span>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title title">Ladesign</h1>
+        <h2 class="hero__subtitle subtitle">Дизайн-проекты жилых и коммерческих помещений. Малая архитектура</h2>
+        <div class="hero__link-wrapper">
+        <div class="hero__link">
+          <svg class="arrow_bottom">
+            <use xlink:href="img/sprite.svg#arrow_bottom"></use>
+          </svg>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="our-team">
+      <div class="container">
+         <h2 class="our-team__title title">Наша команда дает уверенность</h2>
+         <div class="our-team__wrapper">
+          <div class="our-team__items">
+            <p class="our-team__item">
+              Дизайн-проект от студии LA Design не только совершенен по дизайну, но и реализуем
+            </p>
+            <div class="our-team__item">
+              <h2 class="our-team__item-title subtitle">
+                Каждый проект уникален
+              </h2>
+              <div class="our-team__item-text">
+                Дизайнеры и архитекторы студии не работают по шаблону, учитывают все пожелания и не копируют работы из чужих портфолио
+              </div>
+            </div>
+            <div class="our-team__item">
+              <h2 class="our-team__item-title subtitle">
+                Полное сопровождение
+              </h2>
+              <div class="our-team__item-text">
+                Клиент может заказать услугу по авторскому надзору и вообще не приезжать на объект. Мы будем контролировать и корректировать ход выполнения ремонтных работ согласно дизайн-проекту
+              </div>
+            </div>
+            <div class="our-team__item">
+              <h2 class="our-team__item-title subtitle">
+                Согласование перепланировки
+              </h2>
+              <div class="our-team__item-text">
+                Поможем согласовать любые планировочные решения, которые не противоречат закону. Возьмем на себя все бумажные вопросы, чтобы освободить ваше время
+              </div>
+            </div>
+            <div class="our-team__item">
+              <h2 class="our-team__item-title subtitle">
+                Техническая документация
+              </h2>
+              <div class="our-team__item-text">
+                Готовим полный пакет документов, который гарантирует ответственный подход к работе и высокое качество реализованного дизайн-проекта
+              </div>
+            </div>
+            <div class="our-team__item">
+              <h2 class="our-team__item-title subtitle">
+                Строгая политика конфиденциальности
+              </h2>
+              <div class="our-team__item-text">
+                Обеспечиваем защиту персональных данных заказчиков и не раскрываем их третьим лицам.
+              </div>
+            </div>
+          </div>
+          <div class="our-team__items">
+            <img src="img/our-team/image.jpg" alt="apartment" class="our-team__image">
+         </div>
+      </div>
+      </div>
+    </section>
+    <section class="portfolio main">
+    <div class="container">
+      <h2 class="portfolio__title title">Портфолио</h2>
+      <div class="portfolio__tabs-wrapper">
+      <div class="portfolio__tabs">
+        <div class="portfolio__tab portfolio__tab_first active" data-tab-name="tab-1">все работы</div>
+        <div class="portfolio__tab portfolio__tab_second" data-tab-name="tab-2">квартиры</div>
+        <div class="portfolio__tab portfolio__tab_third" data-tab-name="tab-3">дома</div>
+        <div class="portfolio__tab portfolio__tab_fourth" data-tab-name="tab-4">коммерческие помещения</div>
+      </div>
+    </div>
+      <div class="portfolio__items-wrapper active tab-1">
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box8">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image8.jpg" alt="room" class="portfolio__item-image8"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box9">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image9.jpg" alt="room" class="portfolio__item-image9"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box10">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image10.jpg" alt="room" class="portfolio__item-image10"></a>
+        </div>
+      </div>
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+      </div> 
+    </div>
+    <div class="portfolio__items-wrapper tab-2">
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"> <img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"> <img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box8">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image8.jpg" alt="room" class="portfolio__item-image8"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box9">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image9.jpg" alt="room" class="portfolio__item-image9"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box10">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image10.jpg" alt="room" class="portfolio__item-image10"></a>
+        </div>
+      </div>
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+      </div> 
+    </div>
+    <div class="portfolio__items-wrapper tab-3">
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box8">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image8.jpg" alt="room" class="portfolio__item-image8"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box9">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image9.jpg" alt="room" class="portfolio__item-image9"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box10">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image10.jpg" alt="room" class="portfolio__item-image10"></a>
+        </div>
+      </div>
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"> <img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+      </div> 
+    </div>
+    <div class="portfolio__items-wrapper tab-4">
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"> <img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"> <img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box8">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image8.jpg" alt="room" class="portfolio__item-image8"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box9">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image9.jpg" alt="room" class="portfolio__item-image9"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box10">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image10.jpg" alt="room" class="portfolio__item-image10"></a>
+        </div>
+      </div>
+      <div class="portfolio__items-inner">
+        <div class="portfolio__item portfolio__item-box1">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image1.jpg" alt="room" class="portfolio__item-image1"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box2">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image2.jpg" alt="room" class="portfolio__item-image2"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box3">
+          <a href="index4.html" class="portfolio__item-link"> <img src="img/portfolio/image3.jpg" alt="room" class="portfolio__item-image3"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box4">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image4.jpg" alt="room" class="portfolio__item-image4"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box5">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image5.jpg" alt="room" class="portfolio__item-image5"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box6">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image6.jpg" alt="room" class="portfolio__item-image6"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-box7">
+          <a href="index4.html" class="portfolio__item-link"><img src="img/portfolio/image7.jpg" alt="room" class="portfolio__item-image7"></a>
+        </div>
+      </div> 
+    </div>
+        <div class="portfolio__button">показать еще работы</div>
+        <div class="portfolio__link-form link-form">
+          <h2 class="link-form__title title">оставить заявку на проект</h2>
+        <svg class="arrow_top"><use xlink:href='img/sprite.svg#arrow_top'></use></svg>
+      </div>
+      </div>
+  </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__items">
+                <a href="https://www.houzz.ru/" class="footer__item-link">houzz</a>
+                <a href="https://www.instagram.com/" class="footer__item-link">instagram</a>
+            </div>
+            <div class="footer__item-copiright">© 2022 LA Design, all rights reserved.</div>
+        </div>
+    </div>
+</footer>
+  </div>
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__close"><img src="img/popup/close.png" alt="cross"></div>
+         <h2 class="popup__title title">ОСТАВЬТЕ СВОИ КОНТАКТЫ. МЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ</h2>
+         <form action="index.html" class="form">
+          <div class="input__wrapper">
+          <input type="text" class="input" placeholder="Ваше имя">
+          <input type="text" class="input" placeholder="Ваш телефон">
+          </div>
+          <div class="submit__wrapper">
+            <div class="submit__wrapper-items">
+             <input id="submit-popup" type="submit" class="submit">
+             <svg class="input_svg">
+              <use xlink:href="#input_svg"></use>
+             </svg>
+            </div>
+          <div class="form__text">Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
+        </div>
+         </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup-thanks">
+    <div class="popup-thanks__body">
+      <div class="popup-thanks__content">
+        <div class="popup-thanks__close"><img src="img/popup/close.png" alt="cross" class="popup-thanks__image"></div>
+        <svg class="icon-thanks">
+          <use xlink:href="img/sprite.svg#icon-thanks"></use>
+        </svg>
+        <h2 class="popup-thanks__title title">Ваша Заявка успешно отправлена</h2>
+        <div class="popup-thanks__text">Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</div>
+        <div class="popup-thanks__social-wrapper">
+          <a href="https://www.houzz.ru/" class="popup-thanks__social-link">houzz</a>
+          <a href="https://www.facebook.com/" class="popup-thanks__social-link">facebook</a>
+          <a href="https://vk.com/" class="popup-thanks__social-link">vkontakte</a>
+          <a href="https://www.instagram.com/" class="popup-thanks__social-link">instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="button-top">
+  </span>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
