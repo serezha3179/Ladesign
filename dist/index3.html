@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>КОНТАКТЫ</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header scroll" id="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="/" class="header__logo">
+                <svg class="header__logo-image">
+                    <use xlink:href="img/sprite.svg#header-logo"></use>
+                </svg>
+            </a>
+            <nav class="nav">
+               <ul class="nav__row">
+                <li class="nav__item"><a href="index1.html" class="nav__item-link">Портфолио</a></li>
+                <li class="nav__item"><a href="index2.html" class="nav__item-link">Услуги и цены</a></li>
+                <li class="nav__item"><a href="index3.html" class="nav__item-link">Контакты</a></li>
+               </ul>
+            </nav>
+            <div class="header__contacts">
+                <a href="tel:+79184123443" class="header__contacts-item">
+                    <svg class="header-phone">
+                        <use xlink:href="img/sprite.svg#header-phone"></use>
+                    </svg>
+                    +7 918 412-34-43</a>
+            </div>
+            <div class="header__burger">
+                <span class="header__burger-item"></span>
+            </div>
+        </div>
+    </div>
+</header>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts__title title">КОНТАКТЫ</h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__items">
+                        <h2 class="contacts__items-title title">
+                            НАПИШИТЕ НАМ 
+                        </h2>
+                        <div class="contacts__items-text">Мы всегда рады ответить на интересующие  вас вопросы. Заполните форму и наш специалист свяжется с вами.</div>
+                        <form action="index3.html" class="contacts-form">
+                            <label class="contacts-form__label">
+                               <input type="text"  class="contacts-form__input required">
+                               <span>Имя</span>
+                            </label>
+                            <label class="contacts-form__label">
+                                <input type="text"  class="contacts-form__input required email">
+                                <span>Ваша эл.почта</span>
+                             </label>
+                             <label class="contacts-form__label">
+                                 <input type="text"  class="contacts-form__input required">
+                                 <span>Ваш вопрос</span>
+                             </label>
+                             <label class="contacts-form__label">
+                               <input type="file"  class="contacts-form__input">
+                               <svg class="download"><use xlink:href="img/sprite.svg#download"></use></svg>
+                               <span>Прикрепить файл</span>
+                             </label>
+                             <div class="input-file-list"></div>  
+                            <div class="submit__wrapper">
+                                <div class="submit__wrapper-items">
+                                 <input id="submit" type="submit" class="submit">
+                                 <svg class="input_svg">
+                                  <use xlink:href="img/sprite.svg#input_svg"></use>
+                                 </svg>
+                                </div>
+                              <div class="form__text">Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contacts__items">
+                        <h2 class="contacts__items-title title">
+                            НАШИ КОНТАКТЫ
+                        </h2>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-phone">
+                            <use xlink:href="img/sprite.svg#header-phone"></use>
+                          </svg>
+                          <a href="tel:+79184123443" class="contacts__item-link">+7 918 412-34-43</a>
+                        </div>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-email">
+                            <use xlink:href="img/sprite.svg#email"></use>
+                          </svg>
+                          <a href="mailto:ladesign@inbox.ru" class="contacts__item-link">ladesign@inbox.ru</a>
+                        </div>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-clock">
+                            <use xlink:href="img/sprite.svg#clock"></use>
+                          </svg>
+                          <span class="contacts__item-text">Пн - Сб 9:00 — 18:00</span>
+                        </div>
+                        <div class="contacts__item">
+                          <svg class="contacts__item-location">
+                            <use xlink:href="img/sprite.svg#location"></use>
+                          </svg>
+                          <span>г.Краснодар,<br>ул.Братьев Игнатовых, 1/1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__items">
+                <a href="https://www.houzz.ru/" class="footer__item-link">houzz</a>
+                <a href="https://www.instagram.com/" class="footer__item-link">instagram</a>
+            </div>
+            <div class="footer__item-copiright">© 2022 LA Design, all rights reserved.</div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <div class="popup__close"><img src="img/popup/close.png" alt="cross"></div>
+             <h2 class="popup__title title">ОСТАВЬТЕ СВОИ КОНТАКТЫ. МЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ</h2>
+             <form action="index.html" class="form">
+              <div class="input__wrapper">
+              <input type="text" class="input" placeholder="Ваше имя">
+              <input type="text" class="input" placeholder="Ваш телефон">
+              </div>
+              <div class="submit__wrapper">
+                <div class="submit__wrapper-items">
+                 <input id="submit-popup" type="submit" class="submit">
+                 <svg class="input_svg">
+                  <use xlink:href="img/sprite.svg#input_svg"></use>
+                 </svg>
+                </div>
+              <div class="form__text">Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
+            </div>
+             </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup-thanks">
+        <div class="popup-thanks__body">
+          <div class="popup-thanks__content">
+            <div class="popup-thanks__close"><img src="img/popup/close.png" alt="cross" class="popup-thanks__image"></div>
+            <svg class="icon-thanks">
+              <use xlink:href="img/sprite.svg#icon-thanks"></use>
+            </svg>
+            <h2 class="popup-thanks__title title">Ваша Заявка успешно отправлена</h2>
+            <div class="popup-thanks__text">Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</div>
+            <div class="popup-thanks__social-wrapper">
+              <a href="https://www.houzz.ru/" class="popup-thanks__social-link">houzz</a>
+              <a href="https://www.facebook.com/" class="popup-thanks__social-link">facebook</a>
+              <a href="https://vk.com/" class="popup-thanks__social-link">vkontakte</a>
+              <a href="https://www.instagram.com/" class="popup-thanks__social-link">instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <span class="button-top">
+    </span>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
