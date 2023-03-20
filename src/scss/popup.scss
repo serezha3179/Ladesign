@@ -11,6 +11,18 @@
     opacity: 0;
     visibility: hidden;
  }
+ @media(max-height: 376px) and (orientation: landscape) {
+    .popup {
+        // padding: 30px 90px;
+        overflow: scroll;
+    }
+ }
+ 
+ @media(max-height: 300px) {
+    .popup {
+        overflow: scroll;
+    }
+ }
  .popup.open {
     opacity: 1;
     visibility: visible;
@@ -22,9 +34,9 @@
     align-items: center;
     padding: 30px 10px;
  }
- @media(max-height: 300px) {
-    .popup {
-        overflow: scroll;
+ @media(orientation: landscape) {
+    .popup__body {
+        padding: 30px 90px;
     }
  }
 .popup__content {
@@ -66,9 +78,9 @@
         padding: 30px 15px;
     }
 }
-@media(max-height: 300px) {
+@media(orientation: landscape) {
     .popup__content {
-        padding: 15px;
+        padding: 30px;
     }
 }
 //////////////////////////////////////// popup-thanks //////////////////////////////////

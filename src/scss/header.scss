@@ -6,7 +6,6 @@
     z-index: 10;
     width: 100%;
     padding: 30px 0px;
-    // border-bottom: 0.5px solid #878787;
     background: transparent;
     transition: 0.2s linear;
 }
@@ -19,9 +18,14 @@
     border-bottom: 0.5px solid #878787;
     z-index: 10;
 }
-@media(max-width: 575px), (max-height: 380px) {
+@media(max-width: 575px) {
     .header {
         padding: 19px 0px;
+    }
+}
+@media(max-width: 992px) and (orientation: landscape) {
+    .header {
+        padding: 10px 0px;
     }
 }
 .header.scroll {
