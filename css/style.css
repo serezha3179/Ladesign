@@ -91,9 +91,14 @@ select {
   z-index: 10;
 }
 
-@media (max-width: 575px), (max-height: 380px) {
+@media (max-width: 575px) {
   .header {
     padding: 19px 0px;
+  }
+}
+@media (max-width: 992px) and (orientation: landscape) {
+  .header {
+    padding: 10px 0px;
   }
 }
 .header.scroll {
@@ -367,6 +372,16 @@ select {
   visibility: hidden;
 }
 
+@media (max-height: 376px) and (orientation: landscape) {
+  .popup {
+    overflow: scroll;
+  }
+}
+@media (max-height: 300px) {
+  .popup {
+    overflow: scroll;
+  }
+}
 .popup.open {
   opacity: 1;
   visibility: visible;
@@ -380,9 +395,9 @@ select {
   padding: 30px 10px;
 }
 
-@media (max-height: 300px) {
-  .popup {
-    overflow: scroll;
+@media (orientation: landscape) {
+  .popup__body {
+    padding: 30px 90px;
   }
 }
 .popup__content {
@@ -427,9 +442,9 @@ select {
     padding: 30px 15px;
   }
 }
-@media (max-height: 300px) {
+@media (orientation: landscape) {
   .popup__content {
-    padding: 15px;
+    padding: 30px;
   }
 }
 .popup-thanks {
