@@ -2381,6 +2381,12 @@ input[type=file] ~ span {
   .practicality__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .practicality__wrapper {
+    margin-bottom: 25px;
   }
 }
 .practicality__item-title {
@@ -2396,11 +2402,19 @@ input[type=file] ~ span {
     letter-spacing: 0.12em;
   }
 }
-.practicality__item-image {
+.practicality-image__item {
+  position: relative;
+  padding-bottom: 58%;
+}
+
+.practicality-image__item-img {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%;
 }
 
 .project-features {
