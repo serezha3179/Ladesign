@@ -214,17 +214,24 @@ body.lock {
     }
 }
 .our-team__item-title::after {
-    content: url('../img/our-team/arrow.svg');
+    content: '';
     display: block;
     position: absolute;
-    top: 0px;
+    background-image: url(../img/our-team/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 51% 52%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #D5D5D5;
+    top: -4px;
     right: -33px;
     transition: 0.2s linear;
 }
 .our-team__item.active .our-team__item-title::after {
     transform: rotate(-90deg);
-    top: -3px;
-    right: -37px;
+    top: -4px;
+    right: -33px;
 }
 .our-team__item-text {
     max-height: 0;
