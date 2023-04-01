@@ -2175,6 +2175,7 @@ input[type=file] ~ span {
 .contacts__item-phone {
   fill: transparent;
   stroke: #393246;
+  stroke-width: 1.7px;
 }
 
 .contacts__item-link {
@@ -2182,18 +2183,17 @@ input[type=file] ~ span {
 }
 
 .contacts__item-email {
-  fill: transparent;
   stroke: #393246;
 }
 
 .contacts__item-clock {
-  fill: transparent;
   stroke: #393246;
 }
 
 .contacts__item-location {
   fill: transparent;
   stroke: #393246;
+  stroke-width: 2px;
 }
 
 .work-hero {
