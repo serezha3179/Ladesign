@@ -1343,7 +1343,6 @@ input[type="file"] ~ span {
 }
 .contacts__item {
     display: flex;
-    // align-items: center;
     margin-bottom: 27px;
 }
 .contacts__item svg {
@@ -1352,30 +1351,24 @@ input[type="file"] ~ span {
     height: 25px;
 }
 .contacts__item-phone {
-    // width: 25px;
-    // height: 25px;
     fill: transparent;
     stroke: #393246;
+    stroke-width: 1.7px;
 }
 .contacts__item-link {
     color: inherit;
 }
 .contacts__item-email {
-    // width: 21px;
-    // height: 16px;
-    fill: transparent;
     stroke: #393246;
 }
 .contacts__item-clock {
-    // width: 25px;
-    // height: 25px;
-    fill: transparent;
     stroke: #393246;
 
 }
 .contacts__item-location {
     fill: transparent;
     stroke: #393246;
+    stroke-width: 2px;
 }
 ///////////////////////////////////////////////// work /////////////////////////////////////////////////////
 .work-hero {
