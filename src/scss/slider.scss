@@ -1,6 +1,14 @@
 .slider__wrapper {
     position: relative;
     margin-bottom: 129px;
+    left: -50px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+
+    &.animate {
+        left: 0;
+        opacity: 1;
+    }
 }
 @media(max-width: 768px) {
     .slider__wrapper { 

@@ -18,5 +18,5 @@ window.addEventListener('scroll', function() {
 headerBurger.addEventListener('click',() => {
   headerBurger.classList.toggle('active');
   header.classList.toggle('active');
-  body.classList.toggle('lock')
+  body.classList.toggle('lock');
 })

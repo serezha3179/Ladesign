@@ -12,7 +12,7 @@ import './slider.js';
 import './apartment-design__slider.js';
 import './modal-window__slider.js';
 import './form-validation.js';
-
+import './animated.js';
 
 
 flsFunctions.testWebP(function (support) {
