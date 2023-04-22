@@ -4,6 +4,7 @@
   <body>
     <div class="wrapper">
     @@include('html/header.html',{"js-header-main":"js-header-main"})
+    <main class="main">
     <section class="hero">
       <div class="container">
         <h1 class="hero__title title is-animate">Ladesign</h1>
@@ -73,7 +74,8 @@
       </div>
     </section>
     @@include('html/portfolio.html',{"main":"main"})
-    @@include('html/footer.html')
+  </main>
+  @@include('html/footer.html')
   </div>
   @@include('html/popup.html')
   <span class="button-top">

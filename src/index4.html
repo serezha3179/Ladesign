@@ -4,13 +4,14 @@
 <body>
     <div class="wrapper">
         @@include('html/header.html',{"js-header-main":"js-header-main"})
-        <section class="work-hero">
+        <main class="main">
+          <section class="work-hero">
             <div class="container">
                 <h1 class="work-hero__title title is-animate">LOFT</h1>
                 <h2 class="work-hero__subtitle subtile is-animate">UNIQUE COLLECTION</h2>
             </div>
-        </section>
-        <section class="apartment-design">
+          </section>
+          <section class="apartment-design">
             <div class="container">
                 <h2 class="apartment-design__title title is-animate">Дизайн 1-комнатной квартиры в стиле loft</h2>
                 <div class="apartment-design__wrapper">
@@ -52,8 +53,8 @@
                 <div class="apartment-design-slider__arrows-wrapper"></div>
               </div>
             </div>
-        </section>
-        <section class="practicality">
+          </section>
+          <section class="practicality">
           <div class="container">
             <h2 class="practicality__title title is-animate">
               Практичность и рациональное использование каждого квадратного метра
@@ -72,13 +73,13 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="practicality-image">
+          </section>
+          <section class="practicality-image">
           <div class="practicality-image__item is-animate">
             <img src="@img/practicality/image.jpg" alt="room" class="practicality-image__item-img">
           </div>
-        </section>
-        <section class="project-features">
+          </section>
+          <section class="project-features">
           <div class="container">
             <h2 class="project-features__title title is-animate">Oсобенности проекта</h2>
             <div class="project-features__wrapper">
@@ -132,8 +133,8 @@
              </div>
             </div> 
           </div>
-        </section>
-        <section class="similar-projects">
+          </section>
+          <section class="similar-projects">
           <div class="container">
             <h2 class="similar-projects__title title is-animate">
               Похожие проекты
@@ -156,7 +157,8 @@
           <svg class="arrow_top"><use xlink:href='@img/sprite.svg#arrow_top'></use></svg>
         </div>
           </div>
-        </section>
+          </section>
+        </main>
         @@include('html/footer.html')
     </div>
     @@include('html/popup.html')
